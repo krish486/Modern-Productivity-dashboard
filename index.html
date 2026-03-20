@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="sidebar">
+            <div class="title">
+                <img src="https://img.freepik.com/premium-vector/cartoon-blue-lightning-flash-thunderbolt-icon_53500-1553.jpg"
+                    alt="">
+                <h1>Nexus Pro</h1>
+            </div>
+            <div class="pages">
+                <div class="menu">
+                    <i class="ri-menu-2-line"></i>
+                </div>
+                <div class="dashboard page">
+                    <div class="icon">
+                        <i class="ri-microsoft-fill"></i>
+                    </div>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="task page">
+                    <div class="icon">
+                        <i class="ri-time-fill"></i>
+                    </div>
+                    <h2>Task</h2>
+                </div>
+                <div class="calender page">
+                    <div class="icon">
+                        <i class="ri-calendar-line"></i>
+                    </div>
+                    <h2>Calendar</h2>
+                </div>
+                <div class="goals page">
+                    <div class="icon">
+                        <i class="ri-focus-2-line"></i>
+                    </div>
+                    <h2>Goals</h2>
+                </div>
+                <div class="notes page">
+                    <div class="icon">
+                        <i class="ri-sticky-note-add-line"></i>
+                    </div>
+                    <h2>Notes</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="notify">
+                <i class="ri-notification-2-fill"></i>
+            </div>
+            <div class="profile">
+                <div class="name">Mr.Developer</div>
+                <div class="image">
+                    <img src="https://cdn-icons-png.freepik.com/512/11488/11488433.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="main_screen">
+            <div class="taskStatus">
+                <div class="status1 status">
+                    <div class="updates">
+                        <h2>TOTAL TASK</h2>
+                        <div class="ico">
+                            <i class="ri-file-chart-fill"></i>
+                        </div>
+                    </div>
+                    <p>128</p>
+                </div>
+                <div class="status2 status">
+                    <div class="updates">
+                        <h2>COMPLETED</h2>
+                        <div class="ico">
+                            <i class="ri-checkbox-circle-fill"></i>
+                        </div>
+                    </div>
+                    <p>94</p>
+                </div>
+                <div class="status3 status">
+                    <div class="updates">
+                        <h2>PENDING</h2>
+                        <div class="ico">
+                            <i class="ri-alarm-fill"></i>
+                        </div>
+                    </div>
+                    <p>34</p>
+                </div>
+                <div class="status4">
+                    <div class="circle">82%</div>
+                    <h2>Peak Performance</h2>
+                </div>
+            </div>
+
+            <div class="task-timmer">
+                <div class="taskmanager">
+                    <div class="header">
+                        <h1>Active Tasks</h1>
+                        <button id="addTaskBtn">+ New Task</button>
+                    </div>
+
+                    <div class="task-input" style="display:none;">
+                        <form>
+                            <input type="text" id="taskTitle" placeholder="Enter task...">
+                            <input type="date" id="taskDate">
+                            <select id="taskPriority">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                            <button id="saveTask">Add</button>
+                        </form>
+                    </div>
+
+                    <div class="tasks" id="taskList">
+                        <div class="task high">
+                            <input type="checkbox" id="demoTask">
+                            <span>Build Productivity Dashboard UI</span>
+                            <small>2026-03-20</small>
+                            <button>🗑</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="timer-card">
+                    <h2>FOCUS TIMER</h2>
+
+                    <div class="progress-ring">
+                        <div class="inner">
+                            <span>25:00</span>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="icon-btn btn reset">⟳</button>
+                        <button class="play-btn btn">▶</button>
+                        <button class="icon-btn btn set">⚙</button>
+                    </div>
+                    <div class="setTime">
+                        <form>
+                            <input type="number" placeholder="Enter Minute...">
+                            <input type="number" placeholder="Enter Second...">
+                            <button>Click</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
